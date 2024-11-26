@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=LXGW+WenKai+Mono+TC&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+     
+    <title>Javascript Game</title>
+
+</head>
+<body>
+
+    <div class="score-card">
+        <div class="logo">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+
+
+        <div class="score" >
+            <div class="score_card1">
+            <p>COMPUTER</p>
+            <p>SCORE</p> 
+            <span class="number" id="computerscore" >0</span>
+            </div>
+        </div>
+        <div class="score_card2">
+            <p>YOUR</p>
+            <p>SCORE </p>
+            <span class="number" id="score">0</span>
+        </div>
+    </div>
+
+
+
+    <div class="game">
+        <div class="info">
+            <p class="user" > You Picked</p>
+            <p class="machine"> PC Picked</p>
+        </div>
+    
+
+
+
+    <div class="option">
+        <img class="triangle" src="./Images/shape.png" alt="">
+
+
+           
+        <div class="sci-con computer1">
+            <div class="item">
+                <img src="/Images/scissors.png" class="flatpng" alt="">
+            </div>
+        </div>
+        <div class="rock-con computer1">
+            <div class="item">
+               <img src="./Images/stone.png" class="flatpng" alt="">
+            </div>
+        
+        </div>
+
+        <div class="paper-con computer1">
+            <div class="item">
+               <img src="./Images/paper.png" class="flatpng" alt="">
+            </div>
+        
+        </div>
+        
+   
+
+
+        <div class="sci-con computer">
+            <div class="item">
+                <img src="/Images/scissors.png" class="flatpng" alt="">
+            </div>
+        </div>
+        <div class="rock-con computer">
+            <div class="item">
+               <img src="./Images/stone.png" class="flatpng" alt="">
+            </div>
+        
+        </div>
+
+        <div class="paper-con computer">
+            <div class="item">
+               <img src="./Images/paper.png" class="flatpng" alt="">
+            </div>
+        
+        </div>
+        
+
+
+
+
+
+        </div>
+
+    <div class="btn-div">
+        <button class="btn-rule">RULES</button>
+
+    </div>
+    <div class="btn-div1">
+        <button  class="btn-next" id="navigateButton">NEXT</button>
+    </div>
+    
+
+
+<div class="model">
+    <div class="rule-modal">
+        <div class="rule-heading">
+            <div class="rule-img">
+                <button class="close"><img class="cancel2" src="./Images/close-button.png" alt=""></button>
+
+                <div class="para-list">
+                    <h2 class="heading">Game Rules</h2>
+
+                <ul class="list">
+                    <li >
+                        <p class="para">Rock beats scissors ,scissors beat paper ,and paper beats rock.</p>
+                    </li>
+                    <li >
+                        <p class="para">Agree ahead of the time whether you'll count off "rock,paper,scissors,shoot" or just "rock,paper,scissors".</p>
+                    </li>
+                    <li >
+                        <p class="para">Use rock,paper,scissors to settle minor decisions or simply play to pass the time
+                        </p>
+                    </li>
+                    <li >
+                        <p class="para">If both players lay down the same hand , each player lays down another hand</p>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="win-modal">
+        <h1 class="winner">YOU WIN</h1>
+        <h1 class="winner1">AGAINST PC </h1>
+        <button class="play">PLAY AGAIN</button>
+    </div>
+
+
+ </div>
+
+ <script>
+    document.getElementById("navigateButton").onclick = function () {
+    console.log(navigateButton);
+    window.location.href = "index1.html";
+};
+
+ </script>
+ 
+ <script src="index.js"></script>
+    
+
+</body>
+</html>
